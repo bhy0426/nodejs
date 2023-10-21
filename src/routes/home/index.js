@@ -5,13 +5,8 @@ const router = express.Router();
 
 const ctrl = require("./home.ctrl");
 
-router.get("/", ctrl.GET.root);
-router.get("/login", ctrl.GET.login);
-router.get("/signup", ctrl.GET.signup);
-router.get("/user/calendar", ctrl.GET.calendar);
-router.get("/user/timer/ranking", ctrl.GET.ranking);
+router.get("/각자 맡은 파트", ctrl.GET.각자 맡은 파트);
+router.post("/각자 맡은 파트", ctrl.POST.각자 맡은 파트);
 
-router.post("/login", ctrl.POST.login);
-router.post("/signup", ctrl.POST.signup);
 
 module.exports = router;
