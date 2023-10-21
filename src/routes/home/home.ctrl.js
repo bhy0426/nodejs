@@ -4,14 +4,19 @@ const db = require("../../models/db");
 const table = require("../../models/UserStorage");
 
 const GET = {
-    각자 맡은 파트: (req, res) => {
-
+    root: (req, res) => {
+        res.send("Root");
     },
 };
 
 const POST = {
-    각자 맡은 파트: (req, res) => {
-
+    calendar: (req, res) => {
+        console.log("캘린더 접속")
+        db.query("SELECT * FROM test_TB", (error, rows) => {
+            if(error) throw error;
+            console.log(rows);
+            res.send(rows);
+        })
     },
 };
 

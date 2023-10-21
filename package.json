@@ -13,5 +13,9 @@
   },
   "author": "",
   "license": "ISC",
+  "bin": {
+    "login": "bin/www.js"
+  },
+  "devDependencies": {},
   "description": ""
 }
