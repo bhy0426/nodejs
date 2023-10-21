@@ -2,10 +2,10 @@ const mysql = require('mysql');
 
 // 연결할 DB 정보입력
 const db = mysql.createConnection({
-    host: 'buckitlab.cafe24app.com',
-    user: 'buckitlab',
-    password: 'buck0329!!',
-    database: 'bukitlab',
+    host: 'localhost',
+    user: 'root',
+    password: '비번',
+    database: 'DB 이름',
     port: '3306',
 });
 
@@ -13,10 +13,10 @@ const db = mysql.createConnection({
 db.connect();
 
 // SHOW 쿼리문 사용
-// db.query('SHOW TABLES', (error, results) => {
-//     if (error) throw error;
-//     console.log(results);
-// })
+db.query('SHOW TABLES', (error, results) => {
+    if (error) throw error;
+    console.log(results);
+})
 
 // 연결 종료
 // db.end();

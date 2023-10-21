@@ -4,19 +4,17 @@ const db = require("../../models/db");
 const table = require("../../models/UserStorage");
 
 const GET = {
-    root: (req, res) => {
-        res.send("Root");
-    },
+
 };
 
 const POST = {
-    calendar: (req, res) => {
-        console.log("캘린더 접속")
-        db.query("SELECT * FROM test_TB", (error, rows) => {
+    goalsetting: (req, res) => {
+        db.query("쿼리문", (error, rows) => {
             if(error) throw error;
-            console.log(rows);
-            res.send(rows);
-        })
+            
+            // rows 출력값
+            // SELECT로 검색하면 검색한 값이 rows에 나와
+        });
     },
 };
 

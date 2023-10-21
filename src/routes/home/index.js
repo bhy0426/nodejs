@@ -5,8 +5,7 @@ const router = express.Router();
 
 const ctrl = require("./home.ctrl");
 
-router.get("/", ctrl.GET.root);
-router.post("/calendar", ctrl.POST.calendar);
+router.post("/goalsetting", ctrl.POST.goalsetting);
 
 
 module.exports = router;
