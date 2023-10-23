@@ -7,9 +7,9 @@
   },
   "name": "login",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "web.js",
   "scripts": {
-    "start": "nodemon ./bin/web.js",
+    "start": "node web.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

@@ -2,10 +2,10 @@ const mysql = require('mysql');
 
 // 연결할 DB 정보입력
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '비번',
-    database: 'DB 이름',
+    host: 'buckitlab.cafe24app.com',
+    user: 'buckitlab',
+    password: 'buck0329!!',
+    database: 'buckitlab',
     port: '3306',
 });
 
